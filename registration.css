@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url("assets/register-form.png");
+    height: 100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
+.Form-box h1 {
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.icon-backto {
+    background-color: white;
+    margin-top: 20%;
+    margin-left: -5%;
+    margin-right: 10px;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    padding: 50px;
+    width: 40vw;
+    background: linear-gradient(344deg, rgba(19, 92, 206, 0.13) 88.62%, rgba(10, 115, 173, 0.00) 124.52%);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));    
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height:70vh;
+}
+
+.wrapper .Form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+    background:white;
+    border-radius:15px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    padding: 0 35px 0 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: bold;
+    pointer-events: none;
+    color:#32486A;
+    transition: .5s;
+}
+
+.input-box input:focus+label,
+.input-box input:valid+label {
+
+    top: -15px;
+    color:white;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    padding: 0 35px 0 10px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font: size 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+/* submit button*/
+.btn {
+    text-decoration: none;
+    padding: 15px 50px;
+    border:0;
+    font-size: 25px;
+    border-radius: 50px;
+    margin-top:50px;
+    color: white;
+    background: #162938;
+    font-weight: bold;
+}
+
+.btn-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1 {
+    color:white;
+    text-align: center;
+}
+
+.fa-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa{
+    color:white;
+    font-size:50px !important;
+}
+
+.header{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        flex-direction: column;
+    }
+    .wrapper{
+        height:auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .Form-box h1, h1 {
+            font-size: 1.5rem;
+        }
+
+    .fa {
+        color: white;
+        font-size: 30px !important;
+    }
+
+    .wrapper {
+        width: 350px;
+    }
+}

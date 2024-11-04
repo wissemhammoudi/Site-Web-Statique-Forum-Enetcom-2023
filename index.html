@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Enet'com</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <navbar id="navbar" data-aos="fade" data-aos-duration="500" data-aos-delay="3000">
+            <div id="logo">
+                <img width="40" style="padding-top:2px" src="assets/enetcom logo.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#speakers">    </a></li>
+                    <li><a href="#schedule">SCHEDULE</a></li>
+                    <li><a href="#sponsors">SPONSORS</a></li>
+                    <li><a href="#our_editions">EDITIONS</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- Registration Button -->
+            <div id="registration-button">
+                <a href="registration.html">REGISTRATION</a>
+            </div>
+            <div id="hamburger-button" onclick="toggleNavbar()" style="display:none; z-index:999;">
+                <img src="https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg" alt="">
+            </div>
+        </navbar>
+        <header>
+            <div class="Hero">
+                <video autoplay loop muted playsinline class="back-video">
+                    <source src="assets/merge.webm" type="video/mp4">
+                </video>
+                <div class="shadow"></div>
+            </div>
+            <div class="hero_content">
+                <div id="edition" data-aos="fade" data-aos-duration="1500" data-aos-delay="2200">8TH EDITION</div>
+                <div id="autotype-text" class="autotype-text">
+                    <h1>ENET'COM ANNUAL FORUM</h1>
+                </div>
+                <div id="description" data-aos="fade" data-aos-duration="1500" data-aos-delay="2400">
+                    Explore Possibilities, Ignite Passions, Create Futures.
+                </div>
+                <div id="countdown" style="margin-top:60px" data-aos="fade-up" data-aos-duration="500"
+                    data-aos-delay="2600">
+                    <div class="first_row" style="text-align:left">
+                        <span style="margin-right:15px" id="days">15</span>
+                        <span style="margin-right:15px" id="hours">13</span>
+                        <span style="margin-right:15px" id="minutes">26</span>
+                        <span style="margin-right:15px" id="seconds">44</span>
+                    </div>
+                    <div class="second_row" style="text-align:center">
+                        <span style="margin-left:15px">Days</span>
+                        <span style="margin-left:15px">Hours</span>
+                        <span style="margin-left:15px">Minutes</span>
+                        <span style="margin-left:15px">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <section id="about_where_when" data-aos="fade-down" data-aos-duration="500" data-aos-delay="3000">
+            <h1>ABOUT THE EVENT</h1>
+            <div>
+                <p>
+                    ENET'COM's annual flagship event brings together prominent figures
+                    and over 2,000 students. A diverse range of multinational corporations
+                    and high-profile companies will be present, offering exceptional
+                    opportunities such as internships and job placements, with on-the-spot
+                    interviews as well. Furthermore, the forum serves as a hub for
+                    discussions, debates, and the exchange of knowledge, all focused on a
+                    chosen theme. The 20th edition of our forum is themed " "
+                </p>
+            </div>
+        </section>
+        <section id="speakers">
+            <h1 style="text-align: center">SPEAKERS</h1>
+        </section>
+        <section id="schedule">
+            <div class="timeline">
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                    <div class="timeline__event__icon ">
+                        <i class="lni-cake"></i>
+
+                    </div>
+                    <div class="timeline__event__date">
+                        20-08-2019
+                    </div>
+                    <div class="timeline__event__content ">
+                        <div class="timeline__event__title">
+                            Birthday
+                        </div>
+                        <div class="timeline__event__description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                aliquam ab
+                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
+                                architecto
+                                harum quidem dolorem in!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                    <div class="timeline__event__icon">
+                        <i class="lni-burger"></i>
+
+                    </div>
+                    <div class="timeline__event__date">
+                        20-08-2019
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            Lunch
+                        </div>
+                        <div class="timeline__event__description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                aliquam ab
+                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
+                                architecto
+                                harum quidem dolorem in!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                    <div class="timeline__event__icon">
+                        <i class="lni-slim"></i>
+
+                    </div>
+                    <div class="timeline__event__date">
+                        20-08-2019
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            Exercise
+                        </div>
+                        <div class="timeline__event__description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                aliquam ab
+                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
+                                architecto
+                                harum quidem dolorem in!</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="timeline__event animated fadeInUp timeline__event--type1">
+                    <div class="timeline__event__icon">
+                        <i class="lni-cake"></i>
+
+                    </div>
+                    <div class="timeline__event__date">
+                        20-08-2019
+                    </div>
+                    <div class="timeline__event__content">
+                        <div class="timeline__event__title">
+                            Birthday
+                        </div>
+                        <div class="timeline__event__description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
+                                aliquam ab
+                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
+                                architecto
+                                harum quidem dolorem in!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="organizer_partners_sponsors">
+            <h1>organizer_partners_sponsors</h1>
+        </section>
+        <section id="our_editions">
+            <h1>our_editions</h1>
+        </section>
+        <section id="faq">
+            <h1>faq</h1>
+        </section>
+        <!--FOOTER-->
+        <div id="footer">
+            <div class="info-cont">
+                <div class="row">
+                    <div class="info-item">
+                        <div><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+
+                        <div>
+                            <h5>Location</h5>
+                        </div>
+                        <div style="text-align: center;">
+                            Route to Tunis, El Ons City,
+                            <br>
+                            Technopôle of Sfax - 3018 Sfax
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <h5>E-Mail</h5>
+                        <div>
+                            forum.enetcom@gmail.com
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h5>Phone</h5>
+                        <div>+216 74 863 047
+                            <br>
+                            +216 74 862 500
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inline">
+            <div class="inline">
+                <div class="footer-container">
+                    <div class="copyright">
+                        <p>&copy;Copyright
+                            <a href="https://www.facebook.com/enetcomje" target="_blank">
+                                <b>Enet'Com Junior Entreprise</b></a>.
+                            All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/enetcomje" target="_blank"
+                            style="text-decoration:none;color:white">
+                            <i class="fa ml-3 fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/enetcomjunior/" target="_blank"
+                            style="text-decoration:none;color:white">
+                            <i class="fa ml-3 fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/enetcom-junior-entreprise/mycompany/" target="_blank"
+                            style="text-decoration:none;color:white">
+                            <i class="fa ml-3 fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+    </script>
+</body>
+
+</html>
