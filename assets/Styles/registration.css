@@ -122,6 +122,17 @@ body {
     background: #162938;
     font-weight: bold;
 }
+.btn:active{
+    text-decoration: none;
+    padding: 15px 50px;
+    border:0;
+    font-size: 25px;
+    border-radius: 50px;
+    margin-top:50px;
+    color: #162938;
+    background: white;
+    font-weight: bold;
+}
 
 .btn-container{
     display:flex;

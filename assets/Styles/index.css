@@ -41,7 +41,7 @@ section {
     padding-top:100px;
     right:0;
     width:100%;
-    height:60vh;
+    height:100vh;
     font-size:20px;
     gap:30px;
     align-items: center;
@@ -252,51 +252,56 @@ padding: 30px;
 }
 
 /*******************__ ABOUT WHEN WHERE Styles __**********************/
-
 #about {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-    
-   
 }
-#about h1{
-font-size: 2rem;
-text-align: center;
+
+#about h1,.conatiner-when h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
+
 .about-event {
     display: grid;
     grid-template-columns: 60% 40%;
-    
 }
+
 .text-mid {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.text-mid p{
-    width:80%;
+
+.text-mid p {
+    width: 80%;
     font-size: 1.5rem;
 }
+
 .logofeee {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .logofeee img {
-    width:100%;
+    width: 100%;
 }
-@media (max-width : 1300px ) {
+
+@media (max-width: 1300px) {
     .logofeee img {
         width: 90%;
     }
 }
-@media (max-width : 800px ) {
+
+@media (max-width: 800px) {
     .about-event {
         display: flex;
         flex-direction: column;
@@ -304,46 +309,51 @@ text-align: center;
     .logofeee img {
         width: 60%;
     }
-    .text-mid p{
-        width:80%;
+    .text-mid p {
+        width: 80%;
         font-size: 1rem;
     }
-    #about h1{
-        font-size: 1.5rem;
+    #about h1 {
         text-align: center;
-        padding-bottom:50px ;
-        }
+        padding-bottom: 50px;
+    }
 }
 
 .container-where {
     width: 100%;
     height: 100vh;
     position: relative;
-    display: flex ;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container-where h1{
+
+.container-where h1 {
     font-size: 2rem;
     text-align: center;
 }
+
 .where {
     font-size: 1.5rem;
 }
+
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     height: 60%;
-    width: 80% ;
-    margin-top: 30px;    
+    width: 80%;
+    margin-top: 30px;
 }
-.card1 {
+
+.card1,
+.card2 {
     width: 100%;
-    position: relative; 
-    display: block;  
+    position: relative;
+    display: block;
     text-align: center;
 }
+
 .img1,
 .img2 {
     position: absolute;
@@ -352,26 +362,25 @@ text-align: center;
     width: 100%;
     height: 100%;
 }
+
 .text-presentation {
     position: absolute;
     left: 5%;
     right: 5%;
-    color: #002B6A;
-    font-size: 22px;
+    color: #022567;
+    font-size: 20px;
 }
 
 .img2 {
-    opacity: 0.5;
+    opacity: 0.79;
 }
-.card2 {
- 
-    width: 100%;    
-}
+
 .card-container img {
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
-.conatiner-when{
+
+.container-when {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -379,19 +388,25 @@ text-align: center;
     justify-content: center;
     align-items: center;
 }
-.conatiner-when h1{
-text-align: center;
-font-size: 2rem;
-padding:50px;
+
+.container-when h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 100px;
 }
+
 .when {
     font-size: 2em;
-
+}
+.datecontainer {
+   display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     padding: 10px;
     border: 20px solid white;
     border-radius: 50%;
@@ -400,40 +415,33 @@ padding:50px;
     background-color: transparent;
     width: 430px;
     height: 430px;
-    line-height: 400px; 
+    line-height: 400px;
     box-sizing: border-box;
-    position: relative; 
-  }
-  
-  .date img {
-width: 400px;
-padding-right: 10px;
+    position: relative;
 }
 
-  
-@media only screen and (max-width: 1300px) {
+.date img {
+    width: 400px;
+    padding-right: 10px;
+}
 
- 
+@media only screen and (max-width: 1300px) {
     .text-presentation {
         font-size: 19px;
     }
 }
-@media only screen and (max-width: 1000px) {
 
-    .card1 {
+@media only screen and (max-width: 1000px) {
+    .card1,
+    .card2 {
         width: 100%;
         height: 400px;
     }
-    .card2 {
-     
-      width: 100%;
-      height: 400px;
-    }
     .text-presentation {
         font-size: 19px;
     }
-    
 }
+
 @media only screen and (max-width: 500px) {
     .text-presentation h2 {
         font-size: 25px;
@@ -442,28 +450,68 @@ padding-right: 10px;
     .text-presentation p {
         font-size: 17px;
     }
-    
-    
-  
 }
-@media only screen and (max-width: 580px){
-section {
-     margin: 0px; 
-}}
+
+@media only screen and (max-width: 800px) {
+    .conatiner-when {
+        padding-top: 300px;
+    }
+    .date {
+        padding: 8px;
+        border: 18px solid white;
+        width: 300px;
+        height: 300px;
+        line-height: 300px;
+    }
+
+    .date img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    section {
+        margin: 0px;
+    }
+
+    .date {
+        padding: 6px;
+        border: 15px solid white;
+        width: 250px;
+        height: 250px;
+        line-height: 250px;
+    }
+
+    .text-presentation {
+        font-size: 1px;
+    }
+
+    .date img {
+        width: 250px;
+    }
+
+    .conatiner-when {
+        padding-top: 350px;
+    }
+}
+
+
+
 /*******************__ SPEAKERS Styles __**********************/
 .speakers h1 {
     font-size: 2.5em;
     text-align: center;
     padding-top: 100px;
 }
+
 .speakers {
     width: 100%;
     display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
 .content-speaker {
     width: 100%;
     height: 100%;
@@ -474,11 +522,10 @@ section {
     justify-content: center;
     flex-direction: column;
     opacity: 0;
-    transition: 0.8s ;
+    transition: 0.8s;
     font-size: 1.1rem;
-    
-
 }
+
 .content-speaker p {
     color: white;
     margin-top: 80%;
@@ -486,52 +533,78 @@ section {
 
 .content-speaker:hover {
     background-color: black;
-    opacity: 40%;
+    opacity: 0.4;
 }
+
 .container-speaker {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     position: relative;
     gap: 50px;
-    
 }
+
 @media (max-width: 768px) {
     .container-speaker {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .content-speaker {
-        width: 93%;    
-    }
-    .img-speaker{
-width: 200px;    }
-  }
-  
-  @media (max-width: 480px) {
-    .container-speaker {
-      grid-template-columns: 1fr;
 
-    }
     .content-speaker {
         width: 93%;
     }
-  
+
+    .img-speaker {
+        width: 88.4%;
+    }
 }
 
+@media (max-width: 480px) {
+    .container-speaker {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center; /* Center items in the container */
+    }
+
+    .content-speaker {
+        width: 86%;
+        padding-right: 80%;
+    }
+
+    .img-speaker {
+        width: 50%;
+        margin: 0;
+    }
+
+    .img-speaker p {
+        width: 100%; /* Adjust width as needed */
+    }
+
+    .content-speaker:active {
+        text-align: center;
+        width: 80%; /* Adjust width as needed */
+        height: auto; /* Adjust height as needed */
+    }
+
+}
+
+
+
 .img-speaker {
-    flex : 0 0 calc(30% - 20px);
+    flex: 0 0 calc(30% - 20px);
     text-align: center;
     height: 280px;
-    margin: 20px; 
-    position: relative; 
+    margin: 20px;
+    position: relative;
     transform: translateX(30px);
-    transition: opacity 0.5s, transform 0.5s;   
+    transition: opacity 0.5s, transform 0.5s;
 }
+
 .img-speaker img {
     max-width: 100%;
     max-height: 100%;
     display: block;
 }
+
+
 
 /*******************__ SCHEDULE Styles __**********************/
 body {
@@ -542,8 +615,8 @@ body {
 #schedule h1 {
     font-size: 2.5em;
     text-align: center;
-    padding: 100px;
-}
+    padding-bottom: 50px;
+    padding-top: 50px;}
 @font-face {
     font-family: 'ESL Legend';
     src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
@@ -800,12 +873,9 @@ body {
 
 .ag-timeline-card_title {
     display: none;
-    margin: 10px 0 0;
-
-
     font-weight: bold;
     font-size: 28px;
-    color: white;
+    color: black;
 }
 
 .ag-timeline-card_desc {
@@ -919,8 +989,8 @@ body {
 #organizer_partners_sponsors h1 {
     font-size: 2.5em;
     text-align: center;
-    padding: 100px;
-}
+    padding-bottom: 50px;
+    padding-top: 50px;}
 
 .Name h1 {
     font-size: 2rem;
@@ -974,8 +1044,10 @@ width: 80%;
 #our_editions h1 {
     font-size: 2.5em;
     text-align: center;
-    padding: 100px;
-}
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}  
 
 #OUREDITION p{
     text-align: center;
@@ -1014,15 +1086,27 @@ img{vertical-align: middle;
   color: black;
 }
 
+@media screen and (max-width:700px) {
+  
+    video{
+        height: 250px;
+    }
+   }
+ 
+
 /*******************__ FAQ Styles __**********************/
 #faq h1 {
     font-size: 2.5em;
     text-align: center;
-    padding: 100px;
-}
+    padding-bottom: 50px;
+    padding-top: 50px;}
 #faq p {
     font-size: 1.5em;
     text-align: center;
+
+        padding-left: 10px;
+        padding-bottom: 20px;
+    
 }
 
 .FREQUENTL-ASKED {
@@ -1094,63 +1178,55 @@ img{vertical-align: middle;
 
   }
   @media screen and (max-width:850px) {
-    .faq-container {
+    .faq-container,.quest-rep {
         width: 400px;
         
 
       }
+
+}
       
-  }
+  
   @media screen and (max-width:510px) {
-    .quest-rep {
-        width: 300px;
-        margin-left: -20%;
+   .faq-container {
+        width: 400px;
         
 
       }
-      
   }
-  @media screen and (max-width:850px) {
-    .quest-rep {
-        width: 725px;
-        margin-left: -40%;
 
-      }
-      
-  }
-  @media screen and (max-width:760px) {
-    .quest-rep {
-        width: 450px;
-        margin-left: -7%;
 
-      }
-      
-  }
   @media screen and (max-width:460px) {
     .quest-rep {
-        width: 399px;
+        width: 250px;
+        margin-left: -5px;
+
+      }
+      .faq-container {
+        width: 250px;
+        
+
       }
       
   }
   @media screen and (max-width:430px) {
     .quest-rep {
-        width: 395px;
-        margin-left: 1%;
+        width: 250px;
       }
       
   }
   @media screen and (max-width:420px) {
     .quest-rep {
-        width: 375px;
-        margin-left: 3%;
+        width: 250px;
 
       }
       
   }
   @media screen and (max-width:390px) {
     .quest-rep {
-        width: 365px;
-        margin-left: 3%;
+        width: 250px;
+        margin-left: -2px;
+
 
       }
       
@@ -1158,20 +1234,16 @@ img{vertical-align: middle;
   @media screen and (max-width:378px) {
     .quest-rep {
         width: 280px;
-        margin-left: 3%;
 
       }
       
   }
   @media screen and (max-width:360px) {
     .quest-rep {
-        width: 300px;
-        margin-left: 3%;
+        width: 250px;
 
       }
-      .faq h1 {
-        margin-left : -5%;
-      }
+    
       
   }
 /*******************__ FOOTER Styles __**********************/
@@ -1234,6 +1306,10 @@ img{vertical-align: middle;
     text-decoration: underline;
 }
 
+@media screen and (max-width:950px) {
+   .row{ grid-template-columns: repeat(2, 1fr);
+   }
+}
 @media screen and (max-width:765px) {
     .copyright{
         font-size:0.8rem;
@@ -1244,8 +1320,11 @@ img{vertical-align: middle;
         justify-content: space-around;
     }
 
-    .row{
-        display:block;
-    }
+   
     
 }
+@media screen and (max-width:450px) {
+
+.row{
+    display:block;
+}}
