@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../img/back1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;  
+    height: 100vh;
+}
+.contain {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container-floux {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 530px;
+    background: linear-gradient(344deg, rgba(19, 92, 206, 0.13) 88.62%, rgba(10, 115, 173, 0.00) 124.52%);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));    
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    margin-left: -175px;
+    margin-top: -33px;
+    border-radius: 30px;
+   
+}
+.cochet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(152, 150, 150);
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-left: -80px;
+    margin-top: 0px;
+    color: white;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 2.5s;
+}
+.hgf {
+    margin-top: 280px;
+    margin-left: -43px;
+    color: white;
+    transition: opacity 0.5s , transform 2.5 ;
+}
+.icon{
+    background-color: white;
+    margin-top: 410px;
+    margin-left: -110px;
+    font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:480px){
+    .container-floux {
+        width: 300px;
+        height: 580px;
+        margin-left: -140px;
+        margin-top: -100px;
+    }
+    .cochet {
+        font-size: 4rem; 
+        top: 10px;      
+        transform: translateY(50px);
+        width: 80px;
+        height: 80px;        
+        margin-top: -50px;
+        transition: opacity 0.5s, transform 2.5s;
+        
+    }
+    .hgf {
+        
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        margin-left: -60px;
+       
+       height: 80px;
+    }
+    .icon {
+        margin-top: 300px;
+        margin-left: -110px;
+
+    }
+}
+.cochet .active {
+        opacity: 1;
+        transform: translateY(0);
+
+}
+   
+

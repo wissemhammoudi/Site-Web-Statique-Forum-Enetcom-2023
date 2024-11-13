@@ -5,55 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum Enet'com</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./assets/Styles/index.css">
+    <link rel="icon" type="image/png" href="./assets/img/enetcom.png" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://rawcdn.githack.com/SochavaAG/example-mycode/master/_common/css/reset.css'>
+
 </head>
 
 <body>
     <div id="header">
-        <navbar id="navbar" data-aos="fade" data-aos-duration="500" data-aos-delay="3000">
+        <navbar id="navbar" data-aos="fade" data-aos-duration="500" data-aos-delay="2000">
             <div id="logo">
-                <img width="40" style="padding-top:2px" src="assets/enetcom logo.png">
+                <img width="40" style="padding-top:2px" src="./assets/img/enetcom logo.png">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#header" >HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#speakers">    </a></li>
+                    <li><a href="#speakers">SPEAKERS</a></li>
                     <li><a href="#schedule">SCHEDULE</a></li>
-                    <li><a href="#sponsors">SPONSORS</a></li>
+                    <li><a href="#organizer_partners_sponsors">SPONSORS</a></li>
                     <li><a href="#our_editions">EDITIONS</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li>    <div id="registration-button">
+                        <a href="./Pages/registration.html">REGISTRATION</a>
+                    </div>
+                </li>
                 </ul>
             </nav>
             <!-- Registration Button -->
-            <div id="registration-button">
-                <a href="registration.html">REGISTRATION</a>
-            </div>
+        
             <div id="hamburger-button" onclick="toggleNavbar()" style="display:none; z-index:999;">
-                <img src="https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg" alt="">
+                <img src="https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg    " alt="">
             </div>
         </navbar>
         <header>
             <div class="Hero">
                 <video autoplay loop muted playsinline class="back-video">
-                    <source src="assets/merge.webm" type="video/mp4">
+                    <source src="./assets/img/merge.webm" type="video/mp4">
                 </video>
                 <div class="shadow"></div>
             </div>
             <div class="hero_content">
-                <div id="edition" data-aos="fade" data-aos-duration="1500" data-aos-delay="2200">8TH EDITION</div>
+                <div id="edition" data-aos="fade" data-aos-duration="1500" data-aos-delay="1000">8TH EDITION</div>
                 <div id="autotype-text" class="autotype-text">
                     <h1>ENET'COM ANNUAL FORUM</h1>
                 </div>
-                <div id="description" data-aos="fade" data-aos-duration="1500" data-aos-delay="2400">
+                <div id="description" data-aos="fade" data-aos-duration="1500" data-aos-delay="1400">
                     Explore Possibilities, Ignite Passions, Create Futures.
                 </div>
                 <div id="countdown" style="margin-top:60px" data-aos="fade-up" data-aos-duration="500"
-                    data-aos-delay="2600">
+                    data-aos-delay="1600">
                     <div class="first_row" style="text-align:left">
                         <span style="margin-right:15px" id="days">15</span>
                         <span style="margin-right:15px" id="hours">13</span>
@@ -71,121 +76,648 @@
         </header>
     </div>
     <main>
-        <section id="about_where_when" data-aos="fade-down" data-aos-duration="500" data-aos-delay="3000">
-            <h1>ABOUT THE EVENT</h1>
-            <div>
-                <p>
-                    ENET'COM's annual flagship event brings together prominent figures
-                    and over 2,000 students. A diverse range of multinational corporations
-                    and high-profile companies will be present, offering exceptional
-                    opportunities such as internships and job placements, with on-the-spot
-                    interviews as well. Furthermore, the forum serves as a hub for
-                    discussions, debates, and the exchange of knowledge, all focused on a
-                    chosen theme. The 20th edition of our forum is themed " "
-                </p>
-            </div>
-        </section>
-        <section id="speakers">
-            <h1 style="text-align: center">SPEAKERS</h1>
-        </section>
-        <section id="schedule">
-            <div class="timeline">
-                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-                    <div class="timeline__event__icon ">
-                        <i class="lni-cake"></i>
-
-                    </div>
-                    <div class="timeline__event__date">
-                        20-08-2019
-                    </div>
-                    <div class="timeline__event__content ">
-                        <div class="timeline__event__title">
-                            Birthday
-                        </div>
-                        <div class="timeline__event__description">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
-                                aliquam ab
-                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
-                                architecto
-                                harum quidem dolorem in!</p>
-                        </div>
-                    </div>
+        <section id="about">
+           
+           <h1>ABOUT THE EVENT</h1>
+            <div class="about-event"  data-aos="fade-down" data-aos-duration="500" data-aos-delay="650">  
+                <div class="text-mid">
+                    <p>
+                        ENET'COM's annual flagship event brings together prominent figures
+                        and over 2,000 students. A diverse range of multinational corporations
+                        and high-profile companies will be present, offering exceptional
+                        opportunities such as internships and job placements, with on-the-spot
+                        interviews as well. Furthermore, the forum serves as a hub for
+                        discussions, and the exchange of knowledge. The 20th edition of our forum is themed " "
+                    </p>
                 </div>
-                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-                    <div class="timeline__event__icon">
-                        <i class="lni-burger"></i>
-
-                    </div>
-                    <div class="timeline__event__date">
-                        20-08-2019
-                    </div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">
-                            Lunch
-                        </div>
-                        <div class="timeline__event__description">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
-                                aliquam ab
-                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
-                                architecto
-                                harum quidem dolorem in!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-                    <div class="timeline__event__icon">
-                        <i class="lni-slim"></i>
-
-                    </div>
-                    <div class="timeline__event__date">
-                        20-08-2019
-                    </div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">
-                            Exercise
-                        </div>
-                        <div class="timeline__event__description">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
-                                aliquam ab
-                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
-                                architecto
-                                harum quidem dolorem in!</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="timeline__event animated fadeInUp timeline__event--type1">
-                    <div class="timeline__event__icon">
-                        <i class="lni-cake"></i>
-
-                    </div>
-                    <div class="timeline__event__date">
-                        20-08-2019
-                    </div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">
-                            Birthday
-                        </div>
-                        <div class="timeline__event__description">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut
-                                aliquam ab
-                                asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut
-                                architecto
-                                harum quidem dolorem in!</p>
-                        </div>
-                    </div>
+                <div class="logofeee">
+                    <img src="./assets/img/feeelogo.png" alt="">
                 </div>
             </div>
+            
         </section>
-        <section id="organizer_partners_sponsors">
-            <h1>organizer_partners_sponsors</h1>
-        </section>
-        <section id="our_editions">
-            <h1>our_editions</h1>
-        </section>
+        <section class="container-where" >
+            <h1>WHERE</h1>
+        <div class="card-container" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="650">
+            <div class="card1">
+                <img src="./assets/img/marasim.jpg" class="img1">
+                <img src="./assets/img/blur.png" class="img2" >
+                <div class="text-presentation">
+                    <br>
+                    <h2>National School of Electronics and Telecommunication of Sfax</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam recusandae expedita architecto vel, nihil ut odio quo qui inventore numquam excepturi alias repellendus doloribus officiis eaque minus, aliquam natus placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam iusto a recusandae facere alias quod animi veritatis ab ea? Quis accusantium rerum vitae ex, nisi quaerat repellendus est inventore.</p>
+                </div>
+            </div>
+            <div class="card2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.311679645432!2d10.735135025345716!3d34.82325527287644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d35cdb3518f5%3A0xe43a5623eae16e25!2z2YXYsdin2LPZitmF!5e0!3m2!1sar!2stn!4v1699991799630!5m2!1sar!2stn"  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+    <section class="conatiner-when" >
+            <h1>WHEN</h1>
+        <div class="date" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="650">
+            <img src="./assets/img/date.png" alt="date de l'evenement"  width="390px"/>
+</div>
+    </section>
+    <section class="speakers" id="speakers">
+            <h1>SPEAKERS</h1>
+        <div class="container-speaker" >
+            <div class="img-speaker"data-aos="fade" data-aos-duration="500" data-aos-delay="650">
+                <img src="./assets/img/speaker.png" > 
+                <div class="content-speaker active">
+                    <p>Roua rezgui <br>CEO of Sofrecom </p>
+                </div>
+            </div>
+            <div class="img-speaker"data-aos="fade" data-aos-duration="500" data-aos-delay="650">
+                <img src="./assets/img/speaker.png" > 
+                <div class="content-speaker active">
+                    <p>Roua rezgui <br>CEO of Sofrecom</p>
+                </div>
+            </div>
+            <div class="img-speaker"data-aos="fade" data-aos-duration="500" data-aos-delay="650">
+                <img src="./assets/img/speaker.png" > 
+                <div class="content-speaker active">
+                    <p>Houssem Mehrez <br>owner of STB </p>
+                </div>
+            </div>
+            <div class="img-speaker"data-aos="fade" data-aos-duration="500" data-aos-delay="`700">
+                <img src="./assets/img/speaker.png" > 
+                <div class="content-speaker active">
+                    <p>Houssem Mehrez <br>owner of STB</p>
+                </div>
+            </div>
+            <div class="img-speaker" data-aos="fade" data-aos-duration="500" data-aos-delay="700">
+                <img src="./assets/img/speaker.png" > 
+                <div class="content-speaker active">
+                    <p>Houssem Mehrez <br>owner of STB</p>
+                </div>
+            </div>
+            <div class="img-speaker" data-aos="fade" data-aos-duration="500" data-aos-delay="700">
+                <img src="./assets/img/speaker.png" > 
+                <div class="content-speaker active">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <section id="schedule">
+        <h1>SCHEDULE</h1>
+        <div class="ag-timeline-block">
+            
+            <section class="ag-section">
+                <div class="ag-format-container">
+                    <div class="js-timeline ag-timeline">
+                        <div class="js-timeline_line ag-timeline_line">
+                            <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                        </div>
+                        <div class="ag-timeline_list">
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">08:00</div>
+                                    </div>
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Discussion</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">OPENING WORD</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                                commodo ligula
+                                                eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                                parturient
+                                                montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                                pellentesque
+                                                eu,
+                                                pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                                                justo, fringilla
+                                                vel, aliquet nec, vulputate eget, arcu.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Déjeuner</div>
+                                    </div>
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">08:30</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 12</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Donec pede justo, fringilla
+                                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                                imperdiet a,
+                                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                                Integer
+                                                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                                vulputate
+                                                eleifend
+                                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                                ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                                Phasellus
+                                                viverra
+                                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">12:00</div>
+                                    </div>
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Session des workshops & compétitions</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title"></div>
+                                            <div class="ag-timeline-card_desc">
+                                                Aenean imperdiet. Etiam ultricies
+                                                nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                                                Etiam
+                                                rhoncus.
+                                                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+                                                libero, sit
+                                                amet
+                                                adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                                pulvinar,
+                                                hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+                                                Donec vitae
+                                                sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit
+                                                amet orci eget
+                                                eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet
+                                                nibh.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshop1</div>
+                                    </div>
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 10</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Sofia tech:AWS CLOUD migration <br>Mme.Rym Regaieg
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshop2</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Session des workshops & compétitions</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Vivamus elementum semper nisi. Aenean vulputate eleifend
+                                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                                ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                                Phasellus
+                                                viverra
+                                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                                                Etiam ultricies
+                                                nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshop3</div>
+                                    </div>
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 8</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Donec quam felis, ultricies nec, pellentesque eu,
+                                                pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                                                justo, fringilla
+                                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                                imperdiet a,
+                                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                                Integer
+                                                tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshp4</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 7</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                                                nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                                                Etiam
+                                                rhoncus.
+                                                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+                                                libero, sit
+                                                amet
+                                                adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                                pulvinar,
+                                                hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshp5</div>
+                                    </div>
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 6</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Vivamus elementum semper nisi. Aenean vulputate eleifend
+                                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                                ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                                Phasellus
+                                                viverra
+                                                nulla ut metus varius laoreet. Quisque rutrum.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshop6</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 5</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Donec pede justo, fringilla
+                                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                                imperdiet a,
+                                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                                Integer
+                                                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                                vulputate
+                                                eleifend
+                                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                                ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                                Phasellus
+                                                viverra
+                                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                                                Etiam ultricies
+                                                nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshop7</div>
+                                    </div>
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 4</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Nullam dictum felis eu pede mollis pretium. Integer
+                                                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                                vulputate
+                                                eleifend
+                                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                                ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                                Phasellus
+                                                viverra
+                                                nulla ut metus varius laoreet.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">14:00</div>
+                                    </div>
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Workshop8</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 3</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                                                Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+                                                libero, sit
+                                                amet
+                                                adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                                pulvinar,
+                                                hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+                                                Donec vitae
+                                                sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit
+                                                amet orci eget
+                                                eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet
+                                                nibh.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Délibération Compétition</div>
+                                    </div>
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">16:30</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 2</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Aenean vulputate eleifend
+                                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                                ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                                Phasellus
+                                                viverra
+                                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                                                Etiam ultricies
+                                                nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+
+                            <div class="js-timeline_item ag-timeline_item">
+                                <div class="ag-timeline-card_box">
+                                    <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                        <div class="ag-timeline-card_point">17:00</div>
+                                    </div>
+                                    <div class="ag-timeline-card_meta-box">
+                                        <div class="ag-timeline-card_meta">Cloture</div>
+                                    </div>
+                                </div>
+                                <div class="ag-timeline-card_item">
+                                    <div class="ag-timeline-card_inner">
+
+                                        <div class="ag-timeline-card_info">
+                                            <div class="ag-timeline-card_title">Season 1</div>
+                                            <div class="ag-timeline-card_desc">
+                                                Donec pede justo, fringilla
+                                                vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                                imperdiet a,
+                                                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                                Integer
+                                                tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                                                vulputate
+                                                eleifend
+                                                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                                                ac, enim.
+                                                Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ag-timeline-card_arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+    </section>
+    <section id="organizer_partners_sponsors" width="100%">
+            <h1>
+                ORGANIZER
+            </h1>
+            <div class="logo-flex">
+            <div class="logo-display">
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+            </div>
+        </div>
+            <div class="Name">
+                <h1>
+                    PARTNERS
+                </h1>
+                </div>
+                <div class="logo-flex">
+                    <div class="logo-display">
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                        <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    </div>
+                </div>
+        <div class="Name">
+            <h1>
+                SPONSORS
+            </h1>
+            </div>
+            <div class="logo-flex">
+                <div class="logo-display">
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                    <img id="img1"src="./assets/img/primatec logo.png" alt="primatec" >
+                </div>
+            </div>
+    </section>
+            <section id="our_editions" width="100vh">
+                <div id="OUREDITION"> 
+                    <h1>
+                        OUR EDITIONS
+                    </h1>
+                    <p>
+                        2022 Edition
+                    </p>  
+                </div>
+                <div class="slideshow-container">
+                 
+                  
+                    <div class="mySlides1">
+                        <video width="100%" height="400" autoplay muted>
+                            <source src="./assets/img/forum2022.mp4" type="video/mp4">
+                        </video>
+                                            </div>
+                  
+                    <div class="mySlides1">
+                        <video width="100%" height="400" muted autoplay>
+                            <source src="./assets/img/forum20221.mp4" type="video/mp4">
+                        </video>
+                                            </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+                  
+            </section>
         <section id="faq">
-            <h1>faq</h1>
-        </section>
+                <div class="Name">
+                    <h1>
+                        FREQUENTLY ASKED QUESTIONS
+                    </h1>
+                </div>
+               <div class="FREQUENTL-ASKED">
+                    <div class="faq-container">
+                       <div class="quest-rep">
+                        <div class="faq-item">
+                            <div class="faq-question">What is the attendance fee for the event?</div>
+                            <div class="icon-container"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>There is no cost associated with the event.</p>
+                        </div>
+                       </div>
+                       <div class="quest-rep">
+                        <div class="faq-item">
+                            <div class="faq-question">What are the benefits of my participation?</div>
+                            <div class="icon-container"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For those seeking internships, this event provides an excellent opportunity to connect with numerous companies.</p>
+                        </div>
+                       </div>
+                       <div class="quest-rep">
+                        <div class="faq-item">
+                            <div class="faq-question">My company is interested in exploring sponsorship opportunities. How can we proceed with this?</div>
+                            <div class="icon-container"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Thank you for your continuous support. If you have any inquiries, please don't hesitate to contact our sponsoring committee at 'mail directeur' or 'mail enetcom' for additional guidance.</p>
+                        </div>
+                       </div>
+                    </div>
+                        </section>
         <!--FOOTER-->
         <div id="footer">
             <div class="info-cont">
@@ -249,7 +781,7 @@
         </div>
 
     </main>
-    <script src="index.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
 
